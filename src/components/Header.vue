@@ -8,6 +8,7 @@
       </span>
     </h1>
     <Button
+      v-show="homePage"
       @toggle-add-task="$emit('toggle-add-task')"
       :text="showAddTask ? 'Close' : 'Add Task'"
       :color="showAddTask ? 'bg-red-400 hover:bg-red-600' : 'bg-purple-400 hover:bg-purple-600'"     
@@ -29,6 +30,15 @@ export default {
   },
   components: {
     Button,
+  },
+  computed: {
+      homePage() {
+          if(this.$route.path === '/') {
+              return true
+          } else {
+              return false
+          }
+      }
   },
 };
 </script>

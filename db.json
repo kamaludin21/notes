@@ -1,0 +1,22 @@
+{
+  "tasks": [
+    {
+      "id": 1,
+      "text": "Follow a github",
+      "day": "June 21th at 19:00",
+      "reminder": true
+    },
+    {
+      "id": 2,
+      "text": "Killing spike for a moment",
+      "day": "June 21th at 19:00",
+      "reminder": true
+    },
+    {
+      "id": 3,
+      "text": "Memories are gone",
+      "day": "June 21th at 19:00",
+      "reminder": false
+    }
+  ]
+}

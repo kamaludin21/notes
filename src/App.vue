@@ -9,33 +9,24 @@
       <hr
         class="h-0.5 bg-black my-2 bg-gradient-to-r from-blue-800 to-purple-500"
       />
-      <div v-show="showAddTask">
-        <AddTask @add-task="addTask" />
-      </div>
-      <Tasks
-        @toggle-reminder="toggleReminder"
-        @delete-task="deleteTask"
-        :tasks="tasks"
-      />
+      <router-view :showAddTask="showAddTask"></router-view>
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
 import Header from "./components/Header";
-import Tasks from "./components/Tasks";
-import AddTask from "./components/AddTask";
+import Footer from "./components/Footer";
 
 export default {
   name: "App",
   components: {
     Header,
-    AddTask,
-    Tasks,
+    Footer
   },
   data() {
     return {
-      tasks: [],
       showAddTask: false,
     };
   },
@@ -43,41 +34,6 @@ export default {
     toggleAddTask() {
       this.showAddTask = !this.showAddTask;
     },
-    addTask(task) {
-      this.tasks = [...this.tasks, task];
-    },
-    deleteTask(id) {
-      if (confirm("Confirm delete?")) {
-        this.tasks = this.tasks.filter((task) => task.id !== id);
-      }
-    },
-    toggleReminder(id) {
-      this.tasks = this.tasks.map((task) =>
-        task.id === id ? { ...task, reminder: !task.reminder } : task
-      );
-    },
-  },
-  created() {
-    this.tasks = [
-      {
-        id: 1,
-        text: "Follow a github",
-        day: "June 21th at 19:00",
-        reminder: true,
-      },
-      {
-        id: 2,
-        text: "Killing spike for a moment",
-        day: "June 21th at 19:00",
-        reminder: true,
-      },
-      {
-        id: 3,
-        text: "Memories are gone",
-        day: "June 21th at 19:00",
-        reminder: false,
-      },
-    ];
   },
 };
 </script>

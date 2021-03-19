@@ -5,12 +5,15 @@
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "tailwind": "tailwindcss build ./src/assets/tailwind.css -o ./src/assets/styles.css"
+    "tailwind": "tailwindcss build ./src/assets/tailwind.css -o ./src/assets/styles.css",
+    "backend": "json-server --watch db.json --port 5000"
   },
   "dependencies": {
     "core-js": "^3.6.5",
+    "json-server": "^0.16.3",
     "tailwindcss": "^2.0.4",
-    "vue": "^3.0.0"
+    "vue": "^3.0.0",
+    "vue-router": "^4.0.5"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

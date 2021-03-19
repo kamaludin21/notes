@@ -2,7 +2,8 @@
   <button
     @click="$emit('toggle-add-task')"
     :class="color"
-    class="py-1 px-4 rounded focus:outline-none hover:shadow-lg font-medium uppercase text-white select-none">
+    class="py-1 px-4 rounded focus:outline-none hover:shadow-lg font-medium uppercase text-white select-none"
+  >
     {{ text }}
   </button>
 </template>
@@ -16,8 +17,7 @@ export default {
       default: "Action button",
     },
     color: String,
-    showAddTask: Boolean
+    showAddTask: Boolean,
   },
-  
 };
 </script>

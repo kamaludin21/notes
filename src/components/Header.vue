@@ -11,7 +11,11 @@
       v-show="homePage"
       @toggle-add-task="$emit('toggle-add-task')"
       :text="showAddTask ? 'Close' : 'Add Task'"
-      :color="showAddTask ? 'bg-red-400 hover:bg-red-600' : 'bg-purple-400 hover:bg-purple-600'"     
+      :color="
+        showAddTask
+          ? 'bg-red-400 hover:bg-red-600'
+          : 'bg-purple-400 hover:bg-purple-600'
+      "
     />
   </header>
 </template>
@@ -26,19 +30,19 @@ export default {
       type: String,
       default: "Title",
     },
-    showAddTask: Boolean
+    showAddTask: Boolean,
   },
   components: {
     Button,
   },
   computed: {
-      homePage() {
-          if(this.$route.path === '/') {
-              return true
-          } else {
-              return false
-          }
+    homePage() {
+      if (this.$route.path === "/") {
+        return true;
+      } else {
+        return false;
       }
+    },
   },
 };
 </script>

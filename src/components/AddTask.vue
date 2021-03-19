@@ -1,6 +1,6 @@
 <template>
   <p class="font-medium text-lg">Task Form</p>
-  <form @submit="onSubmit" action="" class=" mb-2">
+  <form @submit="onSubmit" action="" class="mb-2">
     <div class="flex flex-col w-full">
       <label for="text" class="font-medium text-sm leading-loose">Task</label>
       <input
@@ -32,7 +32,8 @@
       </label>
       <button
         type="submit"
-        class="py-1 px-2 text-sm rounded focus:outline-none bg-blue-400 hover:bg-blue-600 hover:shadow-lg font-medium uppercase text-white select-none">
+        class="py-1 px-2 text-sm rounded focus:outline-none bg-blue-400 hover:bg-blue-600 hover:shadow-lg font-medium uppercase text-white select-none"
+      >
         Submit
       </button>
     </div>
@@ -61,13 +62,13 @@ export default {
         // id: Math.floor(Math.random() * 1000),
         text: this.text,
         day: this.day,
-        reminder: this.reminder
+        reminder: this.reminder,
       };
-      this.$emit('add-task', newTask)
-      
-      (this.text = ""), (this.day = ""), (this.reminder = false);
+      this.$emit("add-task", newTask)((this.text = "")),
+        (this.day = ""),
+        (this.reminder = false);
     },
   },
-  emits: ['add-task']
+  emits: ["add-task"],
 };
 </script>

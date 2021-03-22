@@ -23,3 +23,10 @@ npm run build
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Project stack
+
+- [Vue 3](https://v3.vuejs.org/)
+- [Tailwindcss](https://tailwindcss.com/)
+- [Webpack](https://webpack.js.org/)

@@ -1,4 +1,4 @@
-# notes
+# Vue notes app
 
 ## Project setup
 ```

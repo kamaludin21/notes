@@ -1,5 +1,7 @@
 # Vue notes app
 
+!(preview)[https://raw.githubusercontent.com/kamaludin21/notes/master/public/screenshots.jpg]
+
 ## Project setup
 ```
 npm install

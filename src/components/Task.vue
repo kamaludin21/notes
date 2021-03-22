@@ -2,10 +2,10 @@
   <div
     @dblclick="$emit('toggle-reminder', task.id)"
     :class="task.reminder ? 'border-l-4 pl-4' : 'pl-5'"
-    class="mb-2 flex flex-row m-full justify-between bg-gray-200 border-purple-400 items-center hover:shadow-md select-none"
+    class="mb-2 flex flex-row m-full justify-between bg-gray-200 dark:bg-gray-600 border-purple-400 dark:border-purple-300 items-center hover:shadow-md select-none"
   >
-    <div class="my-2 select-none">
-      <p class="text-base font-medium leading-none">{{ task.text }}</p>
+    <div class="my-4 dark:text-white select-none">
+      <p class="text-base  font-medium leading-none">{{ task.text }}</p>
       <p class="text-sm font-base">{{ task.day }}</p>
       <p class="text-xs font-light leading-loose">
         Reminder: {{ task.reminder ? "ON" : "OFF" }}

@@ -1,5 +1,5 @@
 <template>
-  <footer class="flex flex-col text-center mt-5">
+  <footer class="flex flex-col text-center dark:text-white mt-5">
     <p>Copyright &copy; 2021</p>
     <router-link
       to="/about"

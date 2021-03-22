@@ -1,8 +1,8 @@
 <template>
-  <p class="font-medium text-lg">Task Form</p>
+  <p class="font-medium text-lg dark:text-white">Task Form</p>
   <form @submit="onSubmit" action="" class="mb-2">
     <div class="flex flex-col w-full">
-      <label for="text" class="font-medium text-sm leading-loose">Task</label>
+      <label for="text" class="font-medium text-sm leading-loose dark:text-white">Task</label>
       <input
         v-model="text"
         name="text"
@@ -11,7 +11,7 @@
       />
     </div>
     <div class="flex flex-col w-full">
-      <label for="day" class="font-medium text-sm leading-loose">Day</label>
+      <label for="day" class="font-medium text-sm leading-loose dark:text-white">Day</label>
       <input
         v-model="day"
         name="day"
@@ -21,7 +21,7 @@
     </div>
     <div class="flex flex-row w-full items-center justify-between mb-2">
       <label class="inline-flex items-center mt-3">
-        <span class="mr-2 text-gray-700">Reminder</span>
+        <span class="mr-2 text-gray-700 dark:text-white">Reminder</span>
         <input
           v-model="reminder"
           name="reminder"

@@ -1,6 +1,6 @@
 <template>
-  <p class="font-medium text-lg mb-2">About</p>
-  <p>
+  <p class="font-medium text-lg mb-2 dark:text-white">About</p>
+  <p class="dark:text-white">
     This app is based from
     <a href="" class="hover:text-purple-600 font-medium" target="_blank"
       >this tutorial</a
@@ -9,7 +9,7 @@
 
   <router-link
     to="/"
-    class="my-2 hover:text-purple-600 font-medium hover:underline"
+    class="my-2 dark:text-white hover:text-purple-600 font-medium hover:underline"
     >Go back</router-link
   >
 </template>

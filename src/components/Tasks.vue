@@ -1,5 +1,5 @@
-<template>
-  <p class="font-medium text-lg mb-2">Task list</p>
+<template> 
+  <p class="font-medium text-lg mb-2 dark:text-white">Task list</p>
   <div
     @toggle-reminder="$emit('toggle-reminder', task.id)"
     :key="task.id"

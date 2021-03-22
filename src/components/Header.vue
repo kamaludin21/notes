@@ -1,6 +1,6 @@
 <template>
   <header class="flex flex-row justify-between items-center">
-    <h1 class="text-2xl uppercase font-black font-medium">
+    <h1 class="text-2xl uppercase font-black">
       <span
         class="bg-clip-text text-transparent bg-gradient-to-r from-blue-400 to-purple-500"
       >
